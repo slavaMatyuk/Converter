@@ -1,18 +1,21 @@
-import React from 'react';
-import {StyleSheet, Text, SafeAreaView} from 'react-native';
+import React, {useLayoutEffect, useState} from 'react';
+import {ActivityIndicator} from 'react-native';
+import {THEME} from './constants/theme';
+import AppNavigation from './navigation/AppNavigation';
 
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useLayoutEffect(() => {
+    setIsLoading(false);
+  }, []);
+
   return (
-    <SafeAreaView style={styles.container}>
-      <Text>Page content</Text>
-    </SafeAreaView>
+    <>
+      <AppNavigation />
+      {isLoading && <ActivityIndicator size="large" color={THEME.INFO} />}
+    </>
   );
 };
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-  },
-});
 
 export default App;

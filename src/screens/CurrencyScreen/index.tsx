@@ -7,10 +7,14 @@ type Props = {
 
 export const CurrencyScreen: React.FC<Props> = () => {
   return (
-    <View>
+    <View style={styles.container}>
       <Text>Currency screen</Text>
     </View>
   );
 };
 
-const styles = StyleSheet.create({});
+const styles = StyleSheet.create({
+  container: {
+    backgroundColor: '#ff00ff',
+  },
+});
