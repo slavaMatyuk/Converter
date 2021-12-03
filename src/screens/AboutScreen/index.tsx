@@ -15,6 +15,9 @@ export const AboutScreen: React.FC<Props> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#1212ab',
+    backgroundColor: '#9494ff',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

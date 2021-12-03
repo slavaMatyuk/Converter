@@ -15,6 +15,9 @@ export const CurrencyScreen: React.FC<Props> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ff00ff',
+    backgroundColor: '#ffaeff',
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
   },
 });

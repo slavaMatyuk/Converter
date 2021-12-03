@@ -6,7 +6,7 @@ export const MyAppText = ({...props}) => (
 );
 
 const textStyles = {
-  fontFamily: 'Times New Roman',
-  fontSize: 27,
+  fontFamily: 'roboto',
+  fontSize: 18,
   color: 'black',
 };
