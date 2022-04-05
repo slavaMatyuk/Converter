@@ -38,20 +38,20 @@ export const DropDownList = () => {
 
 const styles = StyleSheet.create({
   inputAndroid: {
-    marginTop: 25,
+    marginTop: 40,
     fontSize: 32,
-    paddingHorizontal: 10,
+    paddingHorizontal: 25,
     paddingVertical: 8,
-    borderWidth: 1,
-    borderColor: 'blue',
+    borderWidth: 2,
+    borderColor: THEME.BORDER,
     borderRadius: 8,
-    color: 'black',
+    color: THEME.PRIMARY,
   },
   text: {
     width: '75%',
     flexDirection: 'row',
     alignItems: 'center',
-    justifyContent: 'space-between',
+    justifyContent: 'space-around',
     marginTop: 25,
   },
   title: {

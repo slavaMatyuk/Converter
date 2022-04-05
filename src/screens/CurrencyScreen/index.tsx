@@ -1,5 +1,6 @@
 import React from 'react';
 import {View, StyleSheet, Text} from 'react-native';
+import {THEME} from '../../constants/theme';
 
 type Props = {
   props: any;
@@ -15,7 +16,7 @@ export const CurrencyScreen: React.FC<Props> = () => {
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#ffaeff',
+    backgroundColor: THEME.CURRENCY_SCREEN,
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',

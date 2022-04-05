@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, Text, View} from 'react-native';
+import {THEME} from '../../constants/theme';
 
 type Props = {
   props: any;
@@ -16,7 +17,7 @@ export const ConverterScreen: React.FC<Props> = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#ffffc4',
+    backgroundColor: THEME.CONVERTER_SCREEN,
     justifyContent: 'center',
     alignItems: 'center',
   },
